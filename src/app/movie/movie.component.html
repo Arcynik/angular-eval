@@ -1,0 +1,8 @@
+<article class="movie">
+    <img [src]="movie.poster_path" [alt]="movie.title" />
+    <div class="movie-body">
+      <h3>{{ movie.title }}</h3>
+      <p>{{ movie.overview }}</p>
+      <a [routerLink]="['/movie', movie.id]">+++</a>
+    </div>
+  </article>

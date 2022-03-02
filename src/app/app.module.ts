@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { MovieComponent } from './movie/movie.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
     FooterComponent,
     MoviesComponent,
     MovieDetailsComponent,
+    MovieComponent,
 
   ],
   imports: [
