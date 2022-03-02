@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { MoviesComponent } from './movies/movies.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
 
 
 @NgModule({
@@ -12,6 +14,8 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     NavbarComponent,
     FooterComponent,
+    MoviesComponent,
+    MovieDetailsComponent,
 
   ],
   imports: [
