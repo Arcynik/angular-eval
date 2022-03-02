@@ -1,4 +1,3 @@
-
 <div class="container">
     <article class="movie-img">
         <img [src]="movie?.poster_path" [alt]="movie?.title" />
@@ -18,6 +17,7 @@
         </div>
 
         <p>Rating  {{ movie?.vote_average }}</p>
-
     </article>
 </div>
+<app-comment-section *ngIf="movie" [comments]="movie.comments"></app-comment-section>
+

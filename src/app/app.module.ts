@@ -11,6 +11,8 @@ import { MoviesComponent } from './movies/movies.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { MovieComponent } from './movie/movie.component';
 import { GenreFilterComponent } from './genreFilter/genre-filter.component';
+import { CommentSectionComponent } from './comment-section/comment-section.component';
+import { CommentComponent } from './comment/comment.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { GenreFilterComponent } from './genreFilter/genre-filter.component';
     MovieDetailsComponent,
     MovieComponent,
     GenreFilterComponent,
+    CommentSectionComponent,
+    CommentComponent,
   ],
   imports: [
     BrowserModule,
