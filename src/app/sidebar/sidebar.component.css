@@ -9,30 +9,16 @@
     background: #FFFFFF;
     font-family: 'Varela Round', sans-serif;
 }
-@media screen and (max-width: 1023px) {
 
-  #sidebarMenu {
-    transform: translateX(-190px);
-    z-index: 10;
-    box-shadow: #0003 0 2px 4px -1px, #00000024 0 4px 5px, #0000001f 0 1px 10px;
-  }
-  .sidebarMenuInner {
-    margin: 90px 0 0 0;
-  }
+#sidebarMenu {
+transform: translateX(-190px);
+z-index: 10;
+box-shadow: #0003 0 2px 4px -1px, #00000024 0 4px 5px, #0000001f 0 1px 10px;
 }
-@media screen and (min-width: 1024px) {
+.sidebarMenuInner {
+margin: 90px 0 0 0;
+}
 
-  #sidebarMenu {
-    border-right: 1px solid #ddd;
-    margin-top: 60px;
-  }
-  .sidebarMenuInner {
-    margin: 30px 0 0 0;
-  }
-  .sidebarIconToggle {
-    display: none;
-  }
-}
 .sidebarMenuInner{
     max-height: calc(100% - 90px);
     overflow-y: scroll;
