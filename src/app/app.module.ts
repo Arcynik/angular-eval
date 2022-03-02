@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { MovieComponent } from './movie/movie.component';
+import { GenreFilterComponent } from './genreFilter/genre-filter.component';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { MovieComponent } from './movie/movie.component';
     MoviesComponent,
     MovieDetailsComponent,
     MovieComponent,
-
+    GenreFilterComponent,
   ],
   imports: [
     BrowserModule,

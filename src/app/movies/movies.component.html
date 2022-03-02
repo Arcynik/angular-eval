@@ -1,3 +1,4 @@
+<app-genre-filter (selectGenreEvent)=filterMovies($event)></app-genre-filter>
 <main>
   <div class="container">
     <div class="grid">
@@ -5,7 +6,6 @@
       <div class="column-3" *ngFor="let movie of movies">
         <app-movie [movie]="movie"></app-movie>
       </div>
-
     </div>
   </div>
 </main>

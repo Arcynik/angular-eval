@@ -1,0 +1,17 @@
+.pointer {
+    cursor: pointer;
+}
+.genre-nav {
+    margin: 2em;
+}
+.nav-header {
+    text-align: center;
+}
+.genres-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.container-line {
+    display: flex;
+    justify-content: space-evenly;
+}
