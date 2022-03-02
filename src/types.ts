@@ -8,8 +8,10 @@ export class Movie {
     title!: string;
     poster_path!: string;
     runtime!: number;
+    spoken_languages!: Language[];
     genres!: Genre[];
     productionCompanies!: ProdCompany[];
+    vote_average!: number;
     comments!: Comment[];
 }
 
@@ -22,15 +24,22 @@ export class Genre {
 export class ProdCompany {
 
     id!: number;
-    logoPath!: string;
+    logo_path!: string;
     name!: string;
-    originCountry!: string;
+    origin_country!: string;
+}
+
+export class Language {
+
+    english_name!: string;
+    iso_639_1!: string;
+    name!: string;
 }
 
 export class Comment {
 
     id!: number;
-    movieId!: number;
+    movie_id!: number;
     text!: string;
     rating!: number;
     date!: string;

@@ -3,6 +3,7 @@
     margin-bottom: 1em;
     border-bottom-left-radius: .25em;
     border-bottom-right-radius: .25em;
+    text-align: center;
   }
   .movie img {
     max-width: 100%;
