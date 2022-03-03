@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { CommentService } from '../services/comment.service';
 
 @Component({
   selector: 'app-comment',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommentComponent implements OnInit {
 
-  constructor() { }
+  @Input() movieId!: number;
+  commentForm: FormGroup;
 
-  ngOnInit(): void {
+  constructor(private formBuilder: FormBuilder, private commentService: CommentService) { 
+    this.commentForm = this.formBuilder.group({
+      rating: '',
+      text: ''
+    })
   }
 
+  ngOnInit(): void {}
+
+  addComment() {
+    const commentData = this.commentForm.value;
+    this.commentService.createComment(this.movieId, commentData).subscribe();
+  }
 }

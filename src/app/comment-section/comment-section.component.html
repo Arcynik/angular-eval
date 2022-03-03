@@ -1,4 +1,5 @@
 <h3>Comment Section</h3>
+<app-comment [movieId]="movieId"></app-comment>
 <div *ngFor="let comment of comments" class="comment-container">
 <article class="comment">
     <h6>{{ comment.date.slice(0, 10) }}</h6>

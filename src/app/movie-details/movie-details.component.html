@@ -19,4 +19,4 @@
         <p>Rating  {{ movie?.vote_average }}</p>
     </article>
 </div>
-<app-comment-section *ngIf="movie" [comments]="movie.comments"></app-comment-section>
+<app-comment-section *ngIf="movie" [movieId]="movie.id" [comments]="movie.comments"></app-comment-section>

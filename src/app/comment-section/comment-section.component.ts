@@ -1,7 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Comment } from 'src/types';
-import { MovieService } from '../services/movie.service';
 
 @Component({
   selector: 'app-comment-section',
@@ -10,11 +8,10 @@ import { MovieService } from '../services/movie.service';
 })
 export class CommentSectionComponent implements OnInit {
 
+  @Input() movieId!: number;
   @Input() comments!: Comment[];
 
   constructor() {}
 
-  ngOnInit(): void {
-    console.info(this.comments);
-  }
+  ngOnInit(): void {} 
 }
