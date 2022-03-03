@@ -17,7 +17,4 @@ export class CommentSectionComponent implements OnInit {
   ngOnInit(): void {
     console.info(this.comments);
   }
-
-
-
 }
