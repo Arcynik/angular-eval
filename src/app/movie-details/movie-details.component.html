@@ -1,0 +1,22 @@
+<div class="container">
+    <article class="movie-img">
+        <img [src]="movie?.poster_path" [alt]="movie?.title" />
+    </article>
+    <article class="movie">
+        <h3>{{ movie?.title }}</h3>
+        <p>{{ movie?.overview }}</p>
+
+        <div class="genres-container">
+           <h4 *ngFor="let genre of movie?.genres">{{ genre.name }}</h4>
+        </div>
+                
+        <p>{{ movie?.runtime }} min /  {{  movie?.release_date?.slice(0, 4) }}</p>
+
+        <div class="lang-container">
+           <h4 *ngFor="let language of movie?.spoken_languages"> {{ language.english_name }} </h4>
+        </div>
+
+        <p>Rating  {{ movie?.vote_average }}</p>
+    </article>
+</div>
+<app-comment-section *ngIf="movie" [movieId]="movie.id" [comments]="movie.comments"></app-comment-section>

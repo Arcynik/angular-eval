@@ -1,0 +1,9 @@
+<h3>Comment Section</h3>
+<app-comment [movieId]="movieId" (addCommentEvent)=updateComments($event)></app-comment>
+<div *ngFor="let comment of comments" class="comment-container">
+<article class="comment">
+    <h6>{{ comment.date.slice(0, 10) }}</h6>
+    <p>{{ comment.text }}</p>
+    <h5>Rating : {{ comment.rating }}</h5>
+</article>
+</div>

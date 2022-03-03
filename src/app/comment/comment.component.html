@@ -1,0 +1,9 @@
+<div class="form-container">
+  <form [formGroup]="commentForm" (ngSubmit)="addComment()">
+    <input type="number" formControlName="rating" placeholder="Your rating..." min="1" max="10" class="rating">
+    <br/>
+    <textarea formControlName="text" placeholder = "Your comment..."></textarea>
+    <br/>
+    <input type="submit" value="Send" class="sendButton">
+  </form>
+</div>

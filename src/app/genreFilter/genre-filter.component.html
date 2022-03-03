@@ -1,0 +1,19 @@
+<div class="genre-nav">
+    <div class="nav-header">
+        <div *ngIf="menuOpen" class="pick-container">
+            <h3 class="pointer"><a (click)="toggleMenu()">Close ❎</a></h3>
+        </div>
+
+        <div *ngIf="!menuOpen">
+            <h3 class="pointer"><a (click)="toggleMenu()">Pick a favorite genre 🙂</a></h3>
+        </div>
+    </div>
+    <div *ngIf="menuOpen" class="genres-container">
+        <div class="container-line">
+            <h4 class="pointer" *ngFor="let genre of pager(1)" (click)="filterGenre(genre.name)">{{ genre.name }}</h4>
+        </div>
+        <div class="container-line">
+            <h4 class="pointer" *ngFor="let genre of pager(2)" (click)="filterGenre(genre.name)">{{ genre.name }}</h4>
+        </div>
+    </div>
+</div>
