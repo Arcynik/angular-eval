@@ -14,4 +14,8 @@ export class CommentSectionComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {} 
+
+  updateComments(newComment: Comment) {
+    this.comments.push(newComment);
+  }
 }
