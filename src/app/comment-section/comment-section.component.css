@@ -1,4 +1,13 @@
 .comment-container {
-    border: dashed #32accd 1px;
-    margin-bottom: 10px;
+    border-top: solid #32accd 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h6 { 
+    text-align: left;
+}
+
+h3, h5 {
+    color: #1e7891;
 }
